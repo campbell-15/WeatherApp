@@ -101,7 +101,7 @@ const WeatherApp = () => {
                 </div>
             </div>
             <div className="more">
-                <button onClick={() => navigate('/view-bag')}>View More</button>
+                <button onClick={() => navigate('/weather-stats')}>View More</button>
             </div>
         </div>
     )

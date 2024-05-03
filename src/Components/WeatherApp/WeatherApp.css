@@ -24,4 +24,17 @@
     border-radius: 30px;
     padding-left: 40px;
     color: #A8A8A8;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.search-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 78px;
+    height: 78px;
+    background: #fafefe;
+    border-radius: 30px;
+    cursor: pointer;
 }

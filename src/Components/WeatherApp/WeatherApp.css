@@ -1,10 +1,18 @@
+body {
+    background-image: linear-gradient(to right, #243949 0%, #517fa4 100%);
+    flex-wrap: wrap;
+}
+
 .container {
     width: 607px;
-    height: 829px;
+    height: 780px;
     margin: auto;
-    margin-top: 60px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     border-radius: 12px;
-    background-image: linear-gradient(to right, #243949 0%, #517fa4 100%);
+    background-image: linear-gradient(-225deg, #CBBACC 0%, #2580B3 100%);
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    flex-wrap: wrap;
 }
 
 .top-bar {
@@ -85,6 +93,10 @@
     font-weight: 400;
 }
 
-.icon {
-    margin-top: 10px;
+.icon-humid {
+    margin-top: 15px;
+}
+
+.icon-wind {
+    margin-top: 12px;
 }

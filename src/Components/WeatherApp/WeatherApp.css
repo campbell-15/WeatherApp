@@ -1,0 +1,27 @@
+.container {
+    width: 607px;
+    height: 829px;
+    margin: auto;
+    margin-top: 60px;
+    border-radius: 12px;
+    background-image: linear-gradient(to right, #243949 0%, #517fa4 100%);
+}
+
+.top-bar {
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+    padding-top: 40px;
+}
+
+.top-bar input {
+    display: flex;
+    width: 362px;
+    height: 78px;
+    background: #fafefe;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    padding-left: 40px;
+    color: #A8A8A8;
+}

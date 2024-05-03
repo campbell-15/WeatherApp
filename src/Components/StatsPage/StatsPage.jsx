@@ -4,7 +4,7 @@ import './StatsPage.css'
 const StatsPage = () => {
     return (
         <div>
-            <h1>Hello</h1>
+            <h1>Coming Soon...</h1>
         </div>
     )
 }

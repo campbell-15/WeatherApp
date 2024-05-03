@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useNavigate } from "react-router-dom";
 import './WeatherApp.css';
 import search_icon from '../Assets/search.png';
 import clear_icon from '../Assets/clear.png';
@@ -11,6 +12,7 @@ import wind_icon from '../Assets/wind.png';
 
 const WeatherApp = () => {
 
+    const navigate = useNavigate();
     let api_key = "559db790b644086760744cd97de594d0";
 
     const [wicon, setWicon] = useState(cloud_icon);
@@ -99,7 +101,7 @@ const WeatherApp = () => {
                 </div>
             </div>
             <div className="more">
-                <button>View More</button>
+                <button onClick={() => navigate('/view-bag')}>View More</button>
             </div>
         </div>
     )

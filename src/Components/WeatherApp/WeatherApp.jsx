@@ -98,6 +98,9 @@ const WeatherApp = () => {
                     </div>
                 </div>
             </div>
+            <div className="more">
+                <button>View More</button>
+            </div>
         </div>
     )
 }

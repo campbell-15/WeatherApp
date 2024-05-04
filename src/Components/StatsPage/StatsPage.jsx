@@ -7,8 +7,8 @@ const StatsPage = () => {
     const weatherData = location.state ? location.state.weatherData : null;
 
     return (
-        <div className="container">
-            <div className="top-bar">
+        <div className="stats-container">
+            <div className="stats-top-bar">
             {weatherData && (
                     <h1>Weather stats for {weatherData.name}</h1>
                 )}
@@ -26,7 +26,7 @@ const StatsPage = () => {
                             </div>
 
                             <div class="ag-courses-item_date-box">
-                            {weatherData.main.temp} °C
+                            {Math.floor(weatherData.main.temp)} °C
                             </div>
                         </div>
                     </div>
@@ -54,7 +54,7 @@ const StatsPage = () => {
                             </div>
 
                             <div class="ag-courses-item_date-box">
-                            {weatherData.main.feels_like}
+                            {Math.floor(weatherData.main.feels_like)}
                             </div>
                         </div>
                     </div>
@@ -68,7 +68,7 @@ const StatsPage = () => {
                             </div>
 
                             <div class="ag-courses-item_date-box">
-                            {weatherData.coord.lon} °
+                            {weatherData.coord.lon} °S
                             </div>
                         </div>
                     </div>
@@ -82,7 +82,7 @@ const StatsPage = () => {
                             </div>
 
                             <div class="ag-courses-item_date-box">
-                            {weatherData.coord.lat} °
+                            {weatherData.coord.lat} °E
                             </div>
                         </div>
                     </div>

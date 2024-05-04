@@ -3,7 +3,7 @@ body {
     flex-wrap: wrap;
 }
 
-.container {
+.stats-container {
     width: 900px;
     height: 780px;
     margin: auto;
@@ -15,7 +15,7 @@ body {
     flex-wrap: wrap;
 }
 
-.top-bar {
+.stats-top-bar {
     display: flex;
     justify-content: center;
     color: white;
@@ -84,6 +84,12 @@ body {
         -webkit-transform: scale(10);
         -ms-transform: scale(10);
         transform: scale(10);
+    }
+    .ag-courses-item_link:hover .ag-courses-item_title {
+        color: #fafefe;
+    }
+    .ag-courses-item_link:hover .ag-courses-item_date-box {
+        color: #fafefe;
     }
     .ag-courses-item_title {
         min-height: 87px;

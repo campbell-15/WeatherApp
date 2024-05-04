@@ -14,7 +14,7 @@ const WeatherApp = () => {
 
     const navigate = useNavigate();
     let api_key = "559db790b644086760744cd97de594d0";
-
+    const [weatherData, setWeatherData] = useState(null);
     const [wicon, setWicon] = useState(cloud_icon);
 
     const search = async () => {
@@ -27,6 +27,7 @@ const WeatherApp = () => {
 
         let response = await fetch(url);
         let data = await response.json();
+        setWeatherData(data);
         const humidity = document.getElementsByClassName("humidity-percent");
         const wind = document.getElementsByClassName("wind-rate");
         const temprature = document.getElementsByClassName("weather-temp");
@@ -101,7 +102,7 @@ const WeatherApp = () => {
                 </div>
             </div>
             <div className="more">
-                <button onClick={() => navigate('/weather-stats')}>View More</button>
+                <button onClick={() => navigate('/weather-stats', { state: { weatherData } })}>View More</button>
             </div>
         </div>
     )

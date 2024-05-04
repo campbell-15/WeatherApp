@@ -15,11 +15,11 @@ const StatsPage = () => {
             </div>
 
             <div className="stats">
-            {weatherData && (
+                {weatherData && (
                 <div>
-                    <p>Temperature: {weatherData.main.temp} °C</p>
-                    <p>Humidity: {weatherData.main.humidity}%</p>
-                    <p>Wind Speed: {weatherData.wind.speed} km/h</p>
+                    <p className='stat-item'>Temperature: {weatherData.main.temp} °C</p>
+                    <p className='stat-item'>Humidity: {weatherData.main.humidity}%</p>
+                    <p className='stat-item'>Wind Speed: {weatherData.wind.speed} km/h</p>
                 </div>
             )}
             </div>

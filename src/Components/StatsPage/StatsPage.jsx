@@ -54,7 +54,7 @@ const StatsPage = () => {
                             </div>
 
                             <div class="ag-courses-item_date-box">
-                            {Math.floor(weatherData.main.feels_like)}
+                            {Math.floor(weatherData.main.feels_like)} °C
                             </div>
                         </div>
                     </div>

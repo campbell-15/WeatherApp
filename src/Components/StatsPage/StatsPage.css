@@ -4,8 +4,9 @@ body {
 }
 
 .stats-container {
-    width: 900px;
-    height: 780px;
+    max-width: 900px; /* Change width to max-width for better responsiveness */
+    width: 100%;
+    height: 100%;
     margin: auto;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -38,7 +39,8 @@ body {
 }
 
 .ag-format-container {
-    width: 900px;
+    max-width: 900px; /* Change width to max-width for better responsiveness */
+    width: 100%;
     margin: 0 auto;
 }
     
@@ -47,24 +49,15 @@ body {
         background-color: #fafefe;
     }
     .ag-courses_box {
-        display: -webkit-box;
-        display: -ms-flexbox;
         display: flex;
-        -webkit-box-align: start;
-        -ms-flex-align: start;
-        align-items: flex-start;
-        -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+        justify-content: center; /* Center items horizontally */
         padding: 50px 0;
-        left: 1000px;
     }
     .ag-courses_item {
-        -ms-flex-preferred-size: calc(33.33333% - 30px);
-        flex-basis: calc(33.33333% - 30px);
-    
+        flex: 0 0 calc(33.33333% - 30px); /* Adjust item size */
         margin: 0 15px 30px;
         overflow: hidden;
-    
         border-radius: 28px;
     }
     .ag-courses-item_link {
@@ -153,7 +146,7 @@ body {
     
     
     
-    @media only screen and (max-width: 979px) {
+    /* @media only screen and (max-width: 979px) {
         .ag-courses_item {
         -ms-flex-preferred-size: calc(50% - 30px);
         flex-basis: calc(50% - 30px);
@@ -161,15 +154,20 @@ body {
         .ag-courses-item_title {
         font-size: 24px;
         }
-    }
+    } */
     
     @media only screen and (max-width: 767px) {
-        .ag-format-container {
-        width: 96%;
+        .stats-container,
+        .ag-format-container,
+        .ag-courses_item {
+            flex-direction: column; /* Change to column layout on smaller screens */
         }
     
+        .ag-courses_item {
+            flex: 0 0 calc(100% - 30px); /* Full width for items */
+        }
     }
-    @media only screen and (max-width: 639px) {
+    /* @media only screen and (max-width: 639px) {
         .ag-courses_item {
         -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
@@ -186,4 +184,4 @@ body {
         .ag-courses-item_date-box {
         font-size: 16px;
         }
-    }
+    } */

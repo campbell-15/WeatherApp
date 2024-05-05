@@ -1,13 +1,18 @@
 import React from 'react';
 import './StatsPage.css';
 import { useLocation } from 'react-router-dom';
+import { useNavigate } from "react-router-dom";
 
 const StatsPage = () => {
     const location = useLocation();
     const weatherData = location.state ? location.state.weatherData : null;
+    const navigate = useNavigate();
 
     return (
         <div className="stats-container">
+            <div className="back">
+                <h4 onClick={() => navigate('/')}>Back</h4>
+            </div>
             <div className="stats-top-bar">
             {weatherData && (
                     <h1>Weather stats for {weatherData.name}</h1>

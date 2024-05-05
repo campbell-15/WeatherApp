@@ -24,12 +24,20 @@ body {
     font-weight: 400;
 }
 
-.stats {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
+.back {
+    width: 80px;
+    height: 50px;
+    /* background-color: #fafefe; */
+    cursor: pointer;
 }
 
+.back h4 {
+    color: #fafefe;
+    font-size: 25px;
+    font-weight: 700;
+    padding-left: 10px;
+    padding-top: 10px;
+}
 
 .stat-item {
     width: 100px;

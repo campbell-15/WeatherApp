@@ -4,7 +4,8 @@ body {
 }
 
 .container {
-    width: 607px;
+    width: 100%;
+    max-width: 607px;
     height: 780px;
     margin: auto;
     margin-top: 20px;
@@ -13,6 +14,33 @@ body {
     background-image: linear-gradient(-225deg, #CBBACC 0%, #2580B3 100%);
     box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
     flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 767px) {
+    /* Styles for small screens */
+    .container {
+        width: 90%; 
+        max-width: none;
+        padding-bottom: 10px;
+    }
+}
+
+@media only screen and (max-width: 479px) {
+    /* Styles for extra small screens */
+    .top-bar {
+        flex-direction: column; /* Stack elements vertically on extra small screens */
+        align-items: center; /* Center items horizontally on extra small screens */
+    }
+
+    .top-bar input {
+        width: 100%; /* Make input full-width on extra small screens */
+    }
+
+    .search-icon {
+        margin-top: 10px; /* Adjust margin for smaller screens */
+    }
+
+    /* Add other styles for extra small screens */
 }
 
 .top-bar {

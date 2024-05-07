@@ -17,14 +17,17 @@ const WeatherApp = () => {
     const [weatherData, setWeatherData] = useState(null);
     const [wicon, setWicon] = useState(cloud_icon);
 
+    // async search function to fiter city api's
     const search = async () => {
         const element = document.getElementsByClassName("cityInput")
         if(element[0].value === "")
         {
             return 0;
         }
+        // declare and concat api url
         let url = `https://api.openweathermap.org/data/2.5/weather?q=${element[0].value}&units=Metric&appid=${api_key}`;
 
+        // get data in json format
         let response = await fetch(url);
         let data = await response.json();
         setWeatherData(data);

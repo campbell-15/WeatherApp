@@ -4,8 +4,11 @@ import { useLocation } from 'react-router-dom';
 import { useNavigate } from "react-router-dom";
 
 const StatsPage = () => {
+    // Track search object of the component
     const location = useLocation();
+    // Operator operator to track weather data state
     const weatherData = location.state ? location.state.weatherData : null;
+    // React hook to navigate back to main page
     const navigate = useNavigate();
 
     return (

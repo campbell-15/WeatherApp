@@ -6,7 +6,7 @@ This React Weather App has been built with React.js and uses the openWeatherMap 
 
 View Live Deployment [HERE](https://campbell-weather-app.vercel.app/)
 
-## Tech STack
+## Tech Stack
 
 Web API | Javascript | React.js | HTML5 & CSS | Bootstrap
 
